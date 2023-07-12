@@ -1,11 +1,25 @@
-EMPTY
-<!-- Remove all lines above this line before making changes to the file -->
-### Subject Matter Experts
-| SNo. | Name | Email | Institute | ID |
-| :---: | :---: | :---: | :---: | :---: |
-| 1 | name | email | institute | id |
+### Subject Matter Expert
 
-### Developers
-| SNo. | Name | Email | Institute | ID |
-| :---: | :---: | :---: | :---: | :---: |
-| 1 | name | email | institute | id |
+<b>Name of Developer | <b> **Prof. Debasis Samanta**
+:--|:--|
+<b> Institute | <b>  **Indian Institute of Technology Kharagpur**
+<b> Email id|     <b>  **dsamanta@iitkgp.ac.in**
+<b> Department |  **Department of Computer Science and Engineering**
+<b>Webpage| <b> [http://www.iitkgp.ac.in/cv/cs-dsamanta](http://www.iitkgp.ac.in/cv/cs-dsamanta)
+
+<b>Name of Developer | <b> **Prof. Sudip Misra**
+:--|:--|
+<b> Institute | <b>  **Indian Institute of Technology Kharagpur**
+<b> Email id|     <b>  **smisra@sit.iitkgp.ac.in**
+<b> Department |  **Department of Computer Science and Engineering**
+<b>Webpage| <b> [http://cse.iitkgp.ac.in/~smisra/](http://cse.iitkgp.ac.in/~smisra/)
+
+
+### Contributors List
+
+SrNo | Name | VLabs Developer or Integration Engineer | Department| Institute
+:--|:--|:--|:--|:--|
+1 | **Barun Kumar Saha** | Developer |  Department of Mechanical Engineering | IIT Kharagpur | 
+2 | **Tuhin Chakrabarty** | Developer |  Department of Mechanical Engineering | IIT Kharagpur | 
+3 | **Bibudhendu Pati** | Developer |  Department of Mechanical Engineering | IIT Kharagpur | 
+4 | **Prakriti Dhang** | Developer and Integration |  Department of Mechanical Engineering | IIT Kharagpur | 
