@@ -70,8 +70,24 @@ The basic COCOMO model considers that effort and development time depends only o
 
 EAF is used to refine the estimates obtained by basic COCOMO as follows:
 
-$$ Effort|_{corrected} = Effort * EAF $$
+<!-- $$ Effort|_{corrected} = Effort * EAF $$
+
 $$ Tdev|_{corrected} = 2.5 * (Effort|_{corrected})^c $$
+ -->
+
+ $$
+ \begin{align*}
+ Effort|_{corrected} &= Effort &* EAF
+ \end{align*}
+ $$
+
+$$
+ \begin{align*}
+ Tdev|_{corrected} &= 2.5 &* (Effort|_{corrected})^c
+ \end{align*}
+ $$
+
+
 
 ### Complete COCOMO Model
 
