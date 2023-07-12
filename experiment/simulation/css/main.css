@@ -1,1 +1,262 @@
-/* You CSS goes in here */
+/*Redeveloped
+Lab: Software Engineering
+Exp:Estimation of Project Metrics
+File Name: main.css
+Author: Prakriti Dhang */
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 100px;
+  }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+ 
+  
+}
+#optd1{
+    border: 0px solid;
+    background-color: transparent;
+}
+#optd2{
+    border: 0px solid;
+    background-color: transparent;
+}
+#optd3{
+    border: 0px solid;
+    background-color: transparent;
+}
+#optd4{
+    border: 0px solid;
+    background-color: transparent;
+}
+#optd5{
+    border: 0px solid;
+    background-color: transparent;
+}
+#opt31{
+    border: 0px solid;
+    background-color: transparent;
+}
+#opt32{
+    border: 0px solid;
+    background-color: transparent;
+}
+#opt33{
+    border: 0px solid;
+    background-color: transparent;
+}
+#opt34{
+    border: 0px solid;
+    background-color: transparent;
+}
+#opt35{
+    border: 0px solid;
+    background-color: transparent;
+}
+#opt36{
+    border: 0px solid;
+    background-color: transparent;
+}
+
+#optpsize{
+    border: 0px solid;
+    background-color: transparent;
+}
+#opteff{
+    border: 0px solid;
+    background-color: transparent;
+}
+#opttdev{
+    border: 0px solid;
+    background-color: transparent;
+}
+#optdev{
+    border: 0px solid;
+    background-color: transparent;
+}
+
+
+.table-hover  tr:hover th, .table-hover  tr:hover td {
+    background-color: #d7feff;
+    color: black;
+    /*background-color: #f8f8f8fa;*/
+}
+#ex1tbl thead{
+    background-color: #1536a1fa;
+    font-weight: bold;
+    text-align: center;
+    color: azure;
+}
+
+::-webkit-scrollbar{
+  height: 4px;
+  width: 4px;
+  background: rgb(136, 255, 100);
+}
+::-webkit-scrollbar-thumb:vertical{
+  background: rgb(36, 124, 1);
+  border-radius: 10px;
+}
+
+table.scrollver {
+    width: 100%;
+    border-spacing: 0;
+    
+ }
+
+ 
+     
+ table.scrollver tbody, table.scrollver thead {
+    display: block;
+ }
+
+table.scrollver tbody {
+    height: 420px; 
+    overflow-y: auto;
+    overflow-x: hidden; 
+ }
+
+.table thead{
+    font-weight: bold;
+}
+
+#ex3tbl tr td{
+    text-align: center;
+}
+
+input[type=range] {
+    height: 28px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 2px 2px 1px #000000;
+    background: #3800A9;
+    border-radius: 5px;
+    border: 1px solid #3800A9;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000;
+    border: 1px solid #000000;
+    height: 20px;
+    width: 19px;
+    border-radius: 4px;
+    background: #00D5FF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #3800A9;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 2px 2px 1px #000000;
+    background: #3800A9;
+    border-radius: 5px;
+    border: 1px solid #3300FF;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #3B3B3B;
+    border: 1px solid #000000;
+    height: 20px;
+    width: 19px;
+    border-radius: 4px;
+    background: #00D5FF;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #3800A9;
+    border: 1px solid #3300FF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px #000000;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #3800A9;
+    border: 1px solid #3300FF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px #000000;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 1px 1px 1px #3B3B3B;
+    border: 1px solid #000000;
+    height: 20px;
+    width: 19px;
+    border-radius: 4px;
+    background: #00D5FF;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #3800A9;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #3800A9;
+  }
+.card{
+    margin-bottom: 10px;
+    
+    
+}
+.card-body{
+   background-color: transparent;
+}
+
+.greyc{
+color: #797979;
+font-weight: bold;
+}
+.pinkc{
+color:rgb(252, 4, 190);
+font-weight: bold;
+}
+.bluec{
+color: blue;
+font-weight: bold;
+}
+
+.greenc{
+color: rgb(18, 107, 0);
+font-weight: bold;
+}
+
+/*footer {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    padding-left: 1%;
+   
+  }*/
