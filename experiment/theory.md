@@ -109,7 +109,7 @@ Using the above parameters one compute the following metrics:
 - **Volume:** V = N * lg n
 - **Difficulty:** D = (n1 * N2) / (2 * n2)
 - **Effort:** E = D * V
-- **Time to Implement:** T = E / 18 (in seconds) [vi]
+- **Time to Implement:** T = E / 18 (in seconds) 
 
 The program volume V is the minimum number of bits needed to encode the program. It represents the size of the program while taking into account the programming language.
 The difficulty metric indicates how difficult a program is to write or understand.
