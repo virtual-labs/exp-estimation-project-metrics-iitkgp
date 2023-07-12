@@ -1,4 +1,4 @@
-### Subject Matter Expert
+### Subject Matter Experts
 
 <b>Name of Developer | <b> **Prof. Debasis Samanta**
 :--|:--|
