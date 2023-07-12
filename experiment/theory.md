@@ -77,22 +77,17 @@ $$ Tdev|_{corrected} = 2.5 * (Effort|_{corrected})^c $$
 
  $$
  \begin{align*}
- Effort|_{corrected} = Effort * EAF\\
- Tdev|_{corrected} = 2.5 * (Effort|_{corrected})^c\\
+ Effort|_{corrected} = Effort * EAF \\
  \end{align*}
  $$
 
 $$
-\begin{align*}
-\\ Tdev|_{corrected} = 2.5 * (Effort|_{corrected})^c\\
+\begin{align*} 
+Tdev|_{corrected} = 2.5 * (Effort|_{corrected})^c \\
 \end{align*}
 $$
 
-$$
-\begin{align*}
-Tdev|_{corrected} = 2.5 * (Effort|_{corrected})^c\\
-\end{align*}
-$$
+
 
 
 
