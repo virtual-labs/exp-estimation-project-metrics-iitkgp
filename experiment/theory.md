@@ -44,8 +44,8 @@ $$ Time = c (Effort)^d $$
 $$ Tdev= 2.5 * (Effort)^c \ Months $$
 $$ Person \ required= Effort/time $$ -->
 
-Effort = a * (KDSI)^b  PM  
-Tdev= 2.5 * (Effort)^c  Months  
+Effort = a * (KDSI)<sup>b</sup>  PM  
+Tdev= 2.5 * (Effort)<sup>c</sup>  Months  
 Person required= Effort/Tdev 
 
 where,
@@ -89,7 +89,7 @@ $$
  -->
 Effort|<sub>corrected</sub> = Effort * EAF
 
-Tdev|<sub>corrected</sub> = 2.5 * ( Effort|<sub>corrected</sub>) ^ c
+Tdev|<sub>corrected</sub> = 2.5 * ( Effort|<sub>corrected</sub>) <sup> c</sup>
 
 
 
