@@ -63,7 +63,7 @@ The basic COCOMO model considers that effort and development time depends only o
 
 
 <div align="center">
-<p>Cost drivers for INtermediate COCOMO (Source: [http://en.wikipedia.org/wiki/COCOMO](http://en.wikipedia.org/wiki/COCOMO))</p>
+<p>Cost drivers for INtermediate COCOMO ([Source:http://en.wikipedia.org/wiki/COCOMO])(http://en.wikipedia.org/wiki/COCOMO)</p>
 <img src="images/costdrives.jpg" width="30%">
 </div>
 
@@ -77,15 +77,22 @@ $$ Tdev|_{corrected} = 2.5 * (Effort|_{corrected})^c $$
 
  $$
  \begin{align*}
- Effort|_{corrected} &= Effort &* EAF\\
+ Effort|_{corrected} = Effort * EAF\\
+ Tdev|_{corrected} = 2.5 * (Effort|_{corrected})^c\\
  \end{align*}
  $$
 
 $$
 \begin{align*}
- Tdev|_{corrected} = 2.5 * (Effort|_{corrected})^c\\
+\\ Tdev|_{corrected} = 2.5 * (Effort|_{corrected})^c\\
 \end{align*}
- $$
+$$
+
+$$
+\begin{align*}
+Tdev|_{corrected} = 2.5 * (Effort|_{corrected})^c\\
+\end{align*}
+$$
 
 
 
