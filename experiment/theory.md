@@ -39,9 +39,14 @@ The concept of organic, semidetached, and embedded systems are described below.
 
 The basic COCOMO model helps to obtain a rough estimate of the project parameters. It estimates effort and time required for development in the following way:
 
-$$ Effort = a * (KDSI)^b \ PM $$
+<!-- $$ Effort = a * (KDSI)^b \ PM $$
+$$ Time = c (Effort)^d $$
 $$ Tdev= 2.5 * (Effort)^c \ Months $$
+$$ Person \ required= Effort/time $$ -->
 
+Effort = a * (KDSI)^b  PM  
+Tdev= 2.5 * (Effort)^c  Months  
+Person required= Effort/Tdev 
 
 where,
 
@@ -76,17 +81,16 @@ $$ Tdev|_{corrected} = 2.5 * (Effort|_{corrected})^c $$
  -->
 
  
-$$
+<!-- $$
 \begin{align*}
 Effort|_{corrected} = Effort * EAF
 \end{align*}
 $$
+ -->
+Effort|<sub>corrected</sub> = Effort * EAF
 
-$$
-\begin{align*}
-Tdev|_{corrected} = 2.5 * ( Effort|_{corrected} ) ^ c
-\end{align*}
-$$
+Tdev|<sub>corrected</sub> = 2.5 * ( Effort|<sub>corrected</sub>) ^ c
+
 
 
 
