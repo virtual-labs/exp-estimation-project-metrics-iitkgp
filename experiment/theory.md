@@ -61,11 +61,11 @@ Embedded | 3.6| 1.20 |  0.32|
 The basic COCOMO model considers that effort and development time depends only on the size of the software. However, in real life there are many other project parameters that influence the development process. The intermediate COCOMO take those other factors into consideration by defining a set of 15 cost drivers (multipliers) as shown in the table below [i]. Thus, any project that makes use of modern programming practices would have lower estimates in terms of effort and cost. Each of the 15 such attributes can be rated on a six-point scale ranging from "very low" to "extra high" in their relative order of importance. Each attribute has an effort multiplier fixed as per the rating. The product of effort multipliers of all the 15 attributes gives the **Effort Adjustment Factor (EAF).**
 
 
+Cost drivers for Intermediate COCOMO 
+[http://en.wikipedia.org/wiki/COCOMO](http://en.wikipedia.org/wiki/COCOMO)
 
-<div align="center">
-<p>Cost drivers for INtermediate COCOMO ([Source:http://en.wikipedia.org/wiki/COCOMO])(http://en.wikipedia.org/wiki/COCOMO)</p>
 <img src="images/costdrives.jpg" width="30%">
-</div>
+
 
 
 EAF is used to refine the estimates obtained by basic COCOMO as follows:
@@ -82,11 +82,16 @@ $$ Tdev|_{corrected} = 2.5 * (Effort|_{corrected})^c $$
  $$
 
 $$
-\begin{align*} 
-Tdev|_{corrected} = 2.5 * (Effort|_{corrected})^c \\
+\begin{align*}
+Effort|_{corrected} = Effort * EAF
 \end{align*}
 $$
 
+$$
+\begin{align*}
+Tdev|_{corrected} = 2.5 * (Effort|_{corrected})^c
+\end{align*}
+$$
 
 
 
