@@ -15,9 +15,8 @@ Follow are the steps to be followed in general to perform the experiments in **S
 #### **Experiment Specific Instructions**
 Following are the instructions specifically for this experiment:
 
-1. The left hand side of the 'Exercises' page will present the problem
-2. The right hand side of the page asks to evaluate certain parameters
-3. The values of the parameters are to be typed in the adjoining text boxes
-4. If all the values entered are correct, then the solution is correct. Otherwise user will be indicated where the error has occurred.
-5. To view a sample solution for the exercise, click on the 'Submit' button, and then on the 'View Solution' button.
-Also, when your solution is not exactly right, you will get a 'View Solution' button to view the solution.
+1. Select exercise number from the drop down.
+2. The 'Exercises 1' is to calculate COCOMO model. Select Project Type from the dropdown. Then enter numeric value in project size and Effort Adjustment Factor (EAF) input field. Click on "Calculate" button to view the result.
+3. The 'Exercises 2' is to  identify operators and operands from a given problem statement. Tick on the operators and operands and click on "Check" button.
+3. The 'Exercises 3' is to  calculate total no. of operators and operands from a given problem statement. click on "Calculate" button to view result.
+4. To view the solution of the exercises, click on the 'Submit' button, and then on the 'View Solution' button.
