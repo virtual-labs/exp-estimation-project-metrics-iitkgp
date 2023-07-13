@@ -33,9 +33,9 @@ The concept of organic, semidetached, and embedded systems are described below.
   - Aims to develop a software strongly related to machine hardware
   - Team size is usually large
 
-  Boehm suggested that estimation of project parameters should be done through three stages: Basic COCOMO, Intermediate COCOMO, and Complete COCOMO.
+Boehm suggested that estimation of project parameters should be done through three stages: Basic COCOMO, Intermediate COCOMO, and Complete COCOMO.
 
-  ### Basic COCOMO Model
+### Basic COCOMO Model
 
 The basic COCOMO model helps to obtain a rough estimate of the project parameters. It estimates effort and time required for development in the following way:
 
