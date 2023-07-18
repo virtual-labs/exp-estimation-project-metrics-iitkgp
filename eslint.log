@@ -1,0 +1,36 @@
+
+/home/runner/work/exp-estimation-project-metrics-iitkgp/exp-estimation-project-metrics-iitkgp/experiment/simulation/js/main.js
+   10:14  warning  'updateSlider' is defined but never used   no-unused-vars
+   37:10  warning  'subex' is defined but never used          no-unused-vars
+  125:10  warning  'viewsolutionb' is defined but never used  no-unused-vars
+  134:22  warning  'efforta' is defined but never used        no-unused-vars
+  139:10  warning  'choicetype' is defined but never used     no-unused-vars
+  173:9   warning  'x' is already defined                     no-redeclare
+  178:9   warning  'effortpsb' is already defined             no-redeclare
+  179:9   warning  'efforts' is already defined               no-redeclare
+  181:9   warning  'effortsc' is already defined              no-redeclare
+  182:9   warning  'tdevs' is already defined                 no-redeclare
+  184:9   warning  'ndevolperss' is already defined           no-redeclare
+  198:9   warning  'x' is already defined                     no-redeclare
+  203:9   warning  'effortpsb' is already defined             no-redeclare
+  204:9   warning  'efforts' is already defined               no-redeclare
+  206:9   warning  'effortsc' is already defined              no-redeclare
+  207:9   warning  'tdevs' is already defined                 no-redeclare
+  209:9   warning  'ndevolperss' is already defined           no-redeclare
+  221:10  warning  'cal1' is defined but never used           no-unused-vars
+  271:10  warning  'choicetypeex' is defined but never used   no-unused-vars
+  377:10  warning  'calculate2' is defined but never used     no-unused-vars
+  612:10  warning  'reset2' is defined but never used         no-unused-vars
+  630:10  warning  'calculate3' is defined but never used     no-unused-vars
+  674:10  warning  'displaybtns2' is defined but never used   no-unused-vars
+  680:10  warning  'stopdisplay2' is defined but never used   no-unused-vars
+  687:10  warning  'showcode' is defined but never used       no-unused-vars
+  700:10  warning  'printDiv' is defined but never used       no-unused-vars
+  712:10  warning  'displaybtns3' is defined but never used   no-unused-vars
+  719:10  warning  'stopdisplay3' is defined but never used   no-unused-vars
+  726:10  warning  'showcode3' is defined but never used      no-unused-vars
+  733:13  warning  'printDiv3' is defined but never used      no-unused-vars
+  745:10  warning  'solview' is defined but never used        no-unused-vars
+
+✖ 31 problems (0 errors, 31 warnings)
+
