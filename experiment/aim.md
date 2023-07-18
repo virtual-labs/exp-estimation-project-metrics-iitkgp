@@ -1,6 +1,3 @@
-## Objectives
+## Aim of the Experiment
 
-**After completing this experiment you will be able to:**
-
-- Categorize projects using COCOMO, and estimate effort and development time required for a project
-- Estimate the program complexity and effort required to recreate it using Halstead's metrics
+In this experiment, we will learn how to estimate cost, effort and duration for a software project, and then select one solution approach which will be found suitable to fulfill the organizational goal.
