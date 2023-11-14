@@ -1,0 +1,1023 @@
+<!--Redeveloped
+Lab: Software Engineering
+Exp:Estimation of Project Metrics
+File Name: projectmetrices_index.html
+Author: Prakriti Dhang -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Add CSS at the head of HTML file -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+
+
+   
+</head>
+<body >
+ <!--  <header id="header">
+    <div class="container-fluid p-3">
+      <div class="card">
+      <div class="row">
+        <div class="col-md-2">
+        <img src="images/vlabs-logo.png" class=" rounded img-fluid" alt="vlabs-logo" >
+      </div>
+      <div class="col-md-8 p-4">
+        <p class="h2 fw-bold text-primary text-center"> Virtual Lab IIT Kharagpur</p>
+      </div>
+      <div class="col-md-2">
+        <img src="images/iitkgp-logo.png" class=" rounded img-fluid" alt="iitkgplogo" >
+      </div>
+      </div>
+    </div>
+    </div>
+  </header> -->
+ 
+  <!-- <div class="container-fluid p-2">
+    <hr>
+    <p class="h3 fw-bold fst-italic text-center" style="color: #000283;"> Exercises</p>
+    <hr>
+</div>  -->
+
+	<div class="container-fluid mt-2 p-3">
+		
+        <div class="d-flex flex-column justify-content-center mb-3 ">  
+				
+
+<div class="card border border-2 border-primary p-2">
+  <div class="card-body">
+	<label class="form-label fw-bold fs-5">Select a problem from the dropdown list shown below</label>
+   <select id="selectex" class="form-select float-center border border-2 border-primary" aria-label="Default select example" onchange="subex()">
+  <option value="0" selected>Exercise #</option>
+  <option value="1">Exercise 1</option>
+  <option value="2">Exercise 2</option>
+  <option value="3">Exercise 3</option>
+</select>
+<br>
+<p class=" fw-bold fs-6" id="para1" style="display: none;">Click submit to view solution</p>
+<button type="button" class="btn btn-info border border-2 border-primary fw-bold" id="dispviewbtn" onclick="viewsolutionb()" disabled>Submit</button>
+
+  </div> <!-- card body ended for select exercise div-->
+</div> <!-- card ended for select exercise div-->
+
+		
+  
+
+		
+			<!----------------------------------------Problem Statement Exercise 1-------------------------------------->
+
+				<div class="card border border-2 border-info p-1" id="exercise1" style="display:none;">
+  <div class="card-body">
+	<label for="prob1" class="form-label fs-5" style="color: brown; font-weight: bold;">Consider the problem statement:</label>
+   <p style="text-align: justify;">Considering your immense expertise in software development, The Absolute Beginners Inc. has recently allotted 
+    you a mega project. The goal of the project is to create a database of all Hindi films released since 2000. 
+    The software would allow one to generate a list of top ten hit films, top ten flop films, best comedy films, 
+    and so on. Using your prior experience you have decided the approximate sizes of each module of the software 
+    as follows:</p>
+  
+ <ul>
+	<li>Data entry (0.9 KDSI)</li>
+<li>Data update (0.7 KDSI)</li>
+<li>Query (0.9 KDSI)</li>
+<li>Report generation and display (2 KDSI)</li>
+ </ul>
+<p>Also take into consideration the following cost drivers with their ratings: </p>  
+<ul>
+  <li>Storage constraints (Low)</li>
+   <li>Experience in developing similar software (High)</li>
+    <li>Programming capabilities of the developers (High)</li>
+    <li>Application of software engineering methods (High)</li>
+    <li>Use of software tools (High)</li>
+</ul>
+<p>(All other cost drivers have nominal rating).</p>
+<h6>Now answer the following:</h6>
+<ul>
+
+  <li>
+    Applying intermediate COCOMO estimate the minimum size of the team you would require to develop this system
+  </li>
+  <li>
+    Assuming that your client would pay Rs. 50,000 per month of development, how much would be the likely billing?
+  </li>
+</ul>
+
+<h6>Learning Objectives:</h6>  
+ <ol>
+	<li>Identify type of a project as per COCOMO
+</li>
+<li>Prepare an estimate of required effort and cost
+</li>
+
+ </ol>
+<p >Limitations: Values presented here are arbitrary and doesn't relate to real life</p> 
+<p><b>Note:</b> The above example has been adapted from COCOMO (Constructive Cost Model), Seminar on Software Cost Estimation WS 2002 / 2003, presented by Nancy Merlo – Schett.</p>
+
+</div> <!-- card body ended for exercise 1 problem statment-->
+</div> <!-- card ended for exercise 1 problem statement-->
+
+
+
+<!----------------------------------------Problem Statement Exercise 1 complete-------------------------------------->
+
+
+	<!-----------------------------Exercise 1 --------------------------->
+
+<div class="card border border-2 border-success p-1" id="ex1" style="display:none;">
+  <div class="card-body">
+    <div class="row">
+    <div class="col-md-6" >
+     
+	<form id="exer1"  class="bg-white " action="">
+    <div class="table-responsive">
+    <table id="ex1tbl" class="table table-bordered border-primary table-striped table-hover">
+     <thead> 
+      <th >Project Type</th>
+      <th >a</th>
+      <th>b</th>
+      <th>c</th>
+     </thead>
+      <tr>
+        <td><select id="selecttypeex" onchange="choicetypeex()" class="form-select float-center border-primary" aria-label="Default select example">
+          <option value="0">Organic</option>
+          <option value="1">Semi-Detached</option>
+          <option value="2">Embedded</option>
+        </select></td>
+        <td id="ta">2.4</td>
+        <td id="tb">1.05</td>
+        <td id="tc">0.38</td>
+      </tr>
+      
+      <tr class="table-primary border-primary">
+        <td>Project size (in KDSI)</td>
+        <td colspan="3"> <input class="form-control border-primary" type="number" id="inp1" ></td>
+      </tr>
+      <tr>
+        <td>Effort (in PM)</td>
+        <td colspan="3" > <input class="form-control border-primary" type="number" id="optd1" readonly></td>
+      </tr>
+      <tr class="table-primary border-primary">
+        <td>Tdev (in month)</td>
+        <td colspan="3" ><input class="form-control border-primary" type="number" id="optd2" readonly> </td>
+      </tr>
+      <tr>
+        <td>Effort Adjustment Factor (EAF)</td>
+        <td colspan="3"><input class="form-control border-primary" type="number"  id="inp2" > </td>
+      </tr>
+      <tr class="table-primary border-primary">
+        <td>Effort|corrected (in PM)</td>
+        <td colspan="3" > <input class="form-control border-primary" type="number" id="optd3" readonly></td>
+      </tr>
+      <tr>
+        <td>Tdev|corrected (in month)</td>
+        <td colspan="3" ><input class="form-control border-primary" type="number" id="optd4" readonly>  </td>
+      </tr>
+      <tr class="table-primary border-primary">
+        <td># of developers</td>
+        <td colspan="3" > <input class="form-control border-primary" type="number" id="optd5" readonly></td>
+      </tr>
+  
+      <tr>
+        <td colspan="4"><div class="text-center"><button type="button" class="btn btn-primary " id="cal" onclick="cal1()" >Calculate</button></div></td>
+      </tr>
+    </table>
+  </div> <!-- table responsive div ended for exercise 1-->
+  </form>
+</div> <!-- column ended for exercise 1-->
+  <div class="p-2 col-md-6">
+    
+    <button class="btn btn-info border-primary border-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      Cost drivers for Intermediate COCOMO
+    </button>
+  
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body border border-2 border-info">
+      <form  class=" bg-white" action="">
+        <div class="table-responsive">
+          <table id="ex1tblcd"  class="scrollver p-2 table table-bordered  border border-2 border-success  table-hover" >
+           <!--<thead style="font-weight: bold;background-color:rgb(136, 255, 100);"-->
+            <tr style="font-weight: bold;background-color:rgb(136, 255, 100);">
+              <td rowspan="2" class="align-middle"  >Cost Drivers</td>
+              <td colspan="6" style="text-align: center;" >Ratings</td>
+            </tr>
+            <tr style="font-weight: bold;background-color:rgb(136, 255, 100);">
+              <td>Very Low</td>
+              <td>Low</td>
+              <td>Nominal</td>
+              <td>High</td>
+              <td>Very High</td>
+              <td>Extra High</td>
+            </tr>
+          <!--/thead>
+          <tbody-->
+            <!------------------------Product Attributes----------------------->
+            <tr>
+              <td  style="font-weight: bold;background-color:rgb(136, 255, 100); color: black;">Product Attributes</td> <!-- background-color:rgba(218, 223, 228, 0.808);-->
+              <td colspan="6"></td>
+            </tr>
+            <tr>
+              <td>Required Software Reliability</td>
+              <td>0.75</td>
+              <td>0.88</td>
+              <td>1.00</td>
+              <td>1.15</td>
+              <td>1.40</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Size of Application Database</td>
+              <td></td>
+              <td>0.94</td>
+              <td>1.00</td>
+              <td>1.08</td>
+              <td>1.16</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Complexity of the Product</td>
+              <td>0.70</td>
+              <td>0.85</td>
+              <td>1.00</td>
+              <td>1.15</td>
+              <td>1.30</td>
+              <td>1.65</td>
+            </tr>
+            <!---------------Hardware Attributes-------------->
+            <tr>
+              <td style="font-weight: bold;background-color:rgb(136, 255, 100);">Hardware Attributes</td>
+              <td colspan="6"></td>
+            </tr>
+            <tr>
+              <td>Run-time Performance Constraints</td>
+              <td></td>
+              <td></td>
+              <td>1.00</td>
+              <td>1.11</td>
+              <td>1.30</td>
+              <td>1.66</td>
+            </tr>
+            <tr>
+              <td>Memory Constraints</td>
+              <td></td>
+              <td></td>
+              <td>1.00</td>
+              <td>1.06</td>
+              <td>1.21</td>
+              <td>1.56</td>
+            </tr>
+            <tr>
+              <td>Volatility of the virtual Machine Environment</td>
+              <td></td>
+              <td>0.87</td>
+              <td>1.00</td>
+              <td>1.15</td>
+              <td>1.30</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Required Turnabout Time</td>
+              <td></td>
+              <td>0.85</td>
+              <td>1.00</td>
+              <td>1.07</td>
+              <td>1.15</td>
+              <td></td>
+            </tr>
+            <!--------------------Personnel attributes---------------------------------->
+            <tr>
+              <td style="font-weight: bold;background-color:rgb(136, 255, 100);">Personnel Attributes</td>
+              <td colspan="6"></td>
+            </tr>
+            <tr>
+              <td>Analyst Capability</td>
+              <td>1.46</td>
+              <td>1.19</td>
+              <td>1.00</td>
+              <td>0.86</td>
+              <td>0.71</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Applications Experience</td>
+              <td>1.29</td>
+              <td>1.13</td>
+              <td>1.00</td>
+              <td>0.91</td>
+              <td>0.82</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Software Engineer Capability</td>
+              <td>1.42</td>
+              <td>1.17</td>
+              <td>1.00</td>
+              <td>0.86</td>
+              <td>0.70</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Virtual Machine Experience</td>
+              <td>1.21</td>
+              <td>1.10</td>
+              <td>1.00</td>
+              <td>0.90</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Programming Language Experience</td>
+              <td>1.14</td>
+              <td>1.07</td>
+              <td>1.00</td>
+              <td>0.95</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <!--------------------Project  attributes---------------------------------->
+            <tr>
+              <td style="font-weight: bold;background-color:rgb(136, 255, 100);;">Project Attributes</td>
+              <td colspan="6"></td>
+            </tr>
+            <tr>
+              <td>Application of Software Engineering Methods</td>
+              <td>1.24</td>
+              <td>1.10</td>
+              <td>1.00</td>
+              <td>0.91</td>
+              <td>0.82</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Use of Software Tools</td>
+              <td>1.24</td>
+              <td>1.10</td>
+              <td>1.00</td>
+              <td>0.91</td>
+              <td>0.82</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Required Development Schedule</td>
+              <td>1.23</td>
+              <td>1.10</td>
+              <td>1.00</td>
+              <td>1.04</td>
+              <td>1.10</td>
+              <td></td>
+            </tr>
+            
+            
+          <!--/tbody-->
+            </table>
+            </div> <!-- table responsive div ended for exercise 1-->
+      </form>
+    </div> <!-- card ended for exercise 1-->
+  </div> <!-- collapse div ended for exercise 1-->
+</div> <!-- column ended for exercise 1-->
+</div> <!-- row ended for exercise 1-->
+</div> <!-- card body ended for exercise 1-->
+</div> <!-- card ended for exercise 1-->
+
+
+<!-----------------------------Exercise 1 complete --------------------------->
+<!----------------------------------------Problem Statement Exercise 2-------------------------------------->
+
+<div class="card  border border-2 border-info p-1" id="exercise2" style="display:none;">
+  <div class="card-body" onmouseover="displaybtns2()" onmouseleave="stopdisplay2()" >
+	<label for="prob2" class="form-label fs-5" style="color: brown; font-weight: bold;">Identify the unique operators and operands from the following snippet of code:</label>
+ <div class="row">
+  <div class="col-md-12">
+    <div class="d-flex flex-row justify-content-end" >
+  <div class="p-1" id="btnsopta" style="display: none; cursor: pointer;"><button type="button" class="btn btn-default btn-outline-primary" onclick="showcode()"><i class="bi bi-file-earmark-code"></i></button></div>
+  
+  <div class="p-1" id="btnsoptb" style="display: none; cursor: pointer;"><button type="button" class="btn btn-default btn-outline-primary" onclick="printDiv('printableArea')"><i class="bi bi-printer"></i></button></div>
+  
+  <div class="p-1" id="btnsoptc" style="display: none; cursor: pointer;"><button type="button" class="btn btn-default btn-outline-primary" onclick="help()"><i class="bi bi-question-circle"></i></button></div>
+   </div> <!-- flex ended for exercise 2 problem statement-->
+  </div> <!-- column 1 ended for exercise 2 problem statement-->
+  </div> <!-- row 1 ended for exercise 2 problem statement-->
+  <div class="row">
+  <div class="col-md-12">
+  <div class="p-2" id="printableArea">
+    <p class="fs-6 border border-1 rounded-1 border-dark p-2">
+      <span class="greyc">int</span><br>
+      main(<span class="greyc">int</span> argc, <span class="greyc">char</span> **argv)<br>
+      {<br>
+      &nbsp;&nbsp; <span class="greyc">int</span> x = 10;<br>
+      &nbsp;&nbsp;    <span class="greyc">int</span> y = 20;<br>
+      &nbsp;&nbsp;  <span class="greyc">  int</span> sum;<br>
+          <br>
+          &nbsp;&nbsp;    sum = x + y;<br>
+          <br>
+          &nbsp;&nbsp;    <span class="pinkc">printf</span>(<span class="bluec">Sum of %d and %d is: %d\n"</span>, x, y, sum);<br>
+          <br>
+          &nbsp;&nbsp;  <span class="greenc">  return</span> 0;<br>
+        }
+
+    </p>
+    <!--img src="./images/ex2.jpg" class="img-fluid" alt="exercise 2 code snippet" -->
+  </div>
+ </div> <!-- column2 ended for exercise 2 problem statement-->
+ 
+  </div> <!-- row 2 ended for exercise 2 problem statement-->
+
+
+  
+</div> <!-- card  body ended for exercise 2 problem statement-->
+</div> <!-- card ended for exercise 2 problem statement-->
+<!----------------------------------------Problem Statement Exercise 2 Complete-------------------------------------->
+
+<!-----------------------------Exercise 2 --------------------------->
+
+<div class="card border border-2 border-success p-1" id="ex2" style="display:none;">
+	<div class="card-body" >
+	  <form id="exer2"class=" bg-white " action="">
+	  <p class=" fs-6"><b>Note:</b> In cases where you've to enter multiple values (for example, listing the operators from a code snippet), please separate them with a comma</p>
+	  <div class="table-responsive">
+      <table id="ex2tb2" class="p-2 table table-bordered border-primary tabe-striped table-hover">
+        <tr>
+          <td>Operators</td>
+          <td><div id="opta" class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="opt1">
+            <label class="form-check-label" for="opt1">
+              int 
+            </label>
+            </div>
+           <div id="optb" class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="opt2">
+              <label class="form-check-label" for="opt2">
+                main
+              </label>
+              </div>
+              <div id="optc" class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="" id="opt3">
+                <label class="form-check-label" for="opt3">
+                  argc 
+                </label>
+                </div>
+                <div id="optd" class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" value="" id="opt4">
+                  <label class="form-check-label" for="opt4">
+                    char 
+                  </label>
+                  </div>
+                  <div id="opte" class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="opt5">
+                    <label class="form-check-label" for="opt5">
+                      * 
+                    </label>
+                    </div>
+                    <div id="optf" class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="" id="opt6">
+                      <label class="form-check-label" for="opt6">
+                        argv 
+                      </label>
+                      </div>
+                      <br>
+                      <div id="optg" class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="" id="opt7">
+                        <label class="form-check-label" for="opt7">
+                          ()
+                        </label>
+                        </div>
+                        <div id="opth" class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" value="" id="opt8">
+                          <label class="form-check-label" for="opt8">
+                            {} 
+                          </label>
+                          </div>
+                          <br>
+                          <div id="opti" class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="opt9">
+                            <label class="form-check-label" for="opt9">
+                              x 
+                            </label>
+                            </div>
+                            <div id="optj" class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="" id="opt10">
+                              <label class="form-check-label" for="opt10">
+                                = 
+                              </label>
+                              </div>
+                              <div id="optk" class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="" id="opt11">
+                                <label class="form-check-label" for="opt11">
+                                 10 
+                                </label>
+                                </div>
+                                <div id="optl" class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" value="" id="opt12">
+                                  <label class="form-check-label" for="opt12">
+                                    ;
+                                  </label>
+                                  </div>
+                                  <div id="optm" class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="opt13">
+                                    <label class="form-check-label" for="opt13">
+                                      y
+                                    </label>
+                                    </div>
+                                    <div id="optn" class="form-check form-check-inline">
+                                      <input class="form-check-input" type="checkbox" value="" id="opt14">
+                                      <label class="form-check-label" for="opt14">
+                                        20 
+                                      </label>
+                                      </div>
+                                      <div id="opto" class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="opt15">
+                                        <label class="form-check-label" for="opt15">
+                                          sum 
+                                        </label>
+                                        </div>
+                                        <div id="optp" class="form-check form-check-inline">
+                                          <input class="form-check-input" type="checkbox" value="" id="opt16">
+                                          <label class="form-check-label" for="opt16">
+                                            + 
+                                          </label>
+                                          </div>
+                                          <br>
+                                          <div id="optq" class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" value="" id="opt17">
+                                            <label class="form-check-label" for="opt17">
+                                              printf  
+                                            </label>
+                                            </div>
+                                            <div id="optr" class="form-check form-check-inline">
+                                              <input class="form-check-input" type="checkbox" value="" id="opt18">
+                                              <label class="form-check-label" for="opt18">
+                                                "Sum of %d and %d is: %d " 
+                                              </label>
+                                              </div>
+                                              <div id="opts" class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" value="" id="opt19">
+                                                <label class="form-check-label" for="opt19">
+                                                  , 
+                                                </label>
+                                                </div>
+                                                <br>
+                                                <div id="optt" class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="checkbox" value="" id="opt20">
+                                                  <label class="form-check-label" for="opt20">
+                                                    return 
+                                                  </label>
+                                                  </div>
+                                                  <div id="optu" class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" value="" id="opt21">
+                                                    <label class="form-check-label" for="opt21">
+                                                      0
+                                                    </label>
+                                                    </div>
+                                                    
+                    
+            </td>
+        </tr>
+        <tr class="table-primary border-primary">
+          <td>Operands </td>
+          <td><div id="oprda" class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="opd1">
+            <label class="form-check-label" for="opd1">
+              int
+            </label>
+            </div>
+            <div id="oprdb" class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="opd2">
+              <label class="form-check-label" for="opd2">
+                main
+              </label>
+              </div>
+              <div id="oprdc" class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="" id="opd3">
+                <label class="form-check-label" for="opd3">
+                  argc 
+                </label>
+                </div>
+                <div id="oprdd" class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" value="" id="opd4">
+                  <label class="form-check-label" for="opd4">
+                    char 
+                  </label>
+                  </div>
+                  <div id="oprde" class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="opd5">
+                    <label class="form-check-label" for="opd5">
+                      * 
+                    </label>
+                    </div>
+                    <div id="oprdf" class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="" id="opd6">
+                      <label class="form-check-label" for="opd6">
+                        argv 
+                      </label>
+                      </div>
+                      <br>
+                      <div id="oprdg" class="form-check form-check-inline ">
+                        <input class="form-check-input" type="checkbox" value="" id="opd7">
+                        <label class="form-check-label" for="opd7">
+                          ()
+                        </label>
+                        </div>
+                        <div id="oprdh" class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" value="" id="opd8">
+                          <label class="form-check-label" for="opd8">
+                            {} 
+                          </label>
+                          </div>
+                          <br>
+                          <div id="oprdi" class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="opd9">
+                            <label class="form-check-label" for="opd9">
+                              x 
+                            </label>
+                            </div>
+                            <div id="oprdj" class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="" id="opd10">
+                              <label class="form-check-label" for="opd10">
+                                = 
+                              </label>
+                              </div>
+                              <div id="oprdk" class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="" id="opd11">
+                                <label class="form-check-label" for="opd11">
+                                 10 
+                                </label>
+                                </div>
+                                <div id="oprdl" class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" value="" id="opd12">
+                                  <label class="form-check-label" for="opd12">
+                                    ;
+                                  </label>
+                                  </div>
+                                  <div id="oprdm" class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="opd13">
+                                    <label class="form-check-label" for="opd13">
+                                      y
+                                    </label>
+                                    </div>
+                                    <div id="oprdn" class="form-check form-check-inline">
+                                      <input class="form-check-input" type="checkbox" value="" id="opd14">
+                                      <label class="form-check-label" for="opd14">
+                                        20 
+                                      </label>
+                                      </div>
+                                      <div id="oprdo" class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="opd15">
+                                        <label class="form-check-label" for="opd15">
+                                          sum 
+                                        </label>
+                                        </div>
+                                        <div id="oprdp" class="form-check form-check-inline">
+                                          <input class="form-check-input" type="checkbox" value="" id="opd16">
+                                          <label class="form-check-label" for="opd16">
+                                            + 
+                                          </label>
+                                          </div>
+                                          <br>
+                                          <div id="oprdq" class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" value="" id="opd17">
+                                            <label class="form-check-label" for="opd17">
+                                              printf  
+                                            </label>
+                                            </div>
+                                            <div id="oprdr" class="form-check form-check-inline">
+                                              <input class="form-check-input" type="checkbox" value="" id="opd18">
+                                              <label class="form-check-label" for="opd18">
+                                                "Sum of %d and %d is: %d " 
+                                              </label>
+                                              </div>
+                                              <div id="oprds" class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" value="" id="opd19">
+                                                <label class="form-check-label" for="opd19">
+                                                  , 
+                                                </label>
+                                                </div>
+                                                <br>
+                                                <div id="oprdt" class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="checkbox" value="" id="opd20">
+                                                  <label class="form-check-label" for="opd20">
+                                                    return 
+                                                  </label>
+                                                  </div>
+                                                  <div id="oprdu" class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" value="" id="opd21">
+                                                    <label class="form-check-label" for="opd21">
+                                                      0
+                                                    </label>
+                                                    </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"> <div class="text-center">
+          
+            <button type="button" class="btn btn-primary" id="cal2" onclick="calculate2()">Check</button>
+            <button type="button" class="btn btn-warning" id="resetbtn" onclick="reset2()">Reset</button>
+          </div></td>
+        </tr>
+        </table>
+        </div> <!-- table responsive div ended for exercise 2-->
+	
+  
+  </form> <!-- form ended for exercise 2-->
+   
+
+	
+  </div> <!-- card  body ended for exercise 2-->
+  </div> <!-- card ended for exercise 2-->
+
+<!-----------------------------Exercise 2  complete --------------------------->
+		
+<!----------------------------------------Problem Statement Exercise 3 -------------------------------------->
+
+
+<div class="card border border-2 border-info p-1" id="exercise3" style="display:none;">
+  <div class="card-body"  onmouseover="displaybtns3()" onmouseleave="stopdisplay3()">
+	<p class="fs-6" >The Absolute Beginners Inc. is again at your door! This time their demand is, however, simple. They have a C program, which computes the area of a circle (code shown below). They want it to be rewritten in Java.</label>
+    <div class="row">
+      <div class="col-md-12">
+    <div class="d-flex flex-row justify-content-end">
+      
+      <div class="p-1" id="btnsopt1" style="display: none; cursor: pointer;"><button type="button" class="btn btn-default btn-outline-primary" onclick="showcode3()"><i class="bi bi-file-earmark-code"></i></button></div>
+
+      <div class="p-1" id="btnsopt2" style="display: none; cursor: pointer;"><button type="button" class="btn btn-default btn-outline-primary" onclick="printDiv3('printableArea3')"><i class="bi bi-printer"></i></button></div>
+      
+      <div class="p-1" id="btnsopt3" style="display: none; cursor: pointer;"><button type="button" class="btn btn-default btn-outline-primary" onclick="help()"><i class="bi bi-question-circle"></i></button></div>
+</div> <!-- flex for exercise 3 problem statement ended-->
+</div> <!-- column div for exercise 3 problem statement ended-->
+</div> <!-- row div for exercise 3 problem statement ended-->
+<div class="row">
+  <div class="col-md-12">
+
+<div class="p-2 flex-grow-1" id="printableArea3">
+  <p class="fs-6  border border-1 rounded-1 border-dark p-2">
+    <span class="greyc">int</span><br>
+    main(<span class="greyc">int</span> argc, <span class="greyc">char</span> **argv)<br>
+    {<br>
+    &nbsp;&nbsp;  <span class="greyc">int</span> radius = 12.34;<br>
+     
+      &nbsp;&nbsp;  <span class="pinkc">printf</span>(<span class="bluec">"Area of the circle with radius %f is: %f\n"</span>, radius, area(radius));<br>
+      
+      &nbsp;&nbsp;  <span class="greenc">return</span> 0;<br>
+    }<br>
+    <br>
+    <span class="greyc">float</span><br>
+   area(<span class="greyc">float</span> r) {<br>
+    &nbsp;&nbsp;  <span class="greenc">return</span> 22 * r * r / 7;<br>
+ }
+
+  </p>
+  <!--img src="./images/ex3.jpg" class="img-fluid" alt="exercise 3 code snippet" -->
+ 
+</div> 
+</div> <!-- column div for exercise 3 problem statement ended-->
+ </div> <!-- row div for exercise 3 problem statement ended-->
+ 
+
+<p class="fs-6"> Using Halstead's metrics estimate the effort required to recreate this program.</p>
+
+  <h6>Learning Objectives:</h6>
+  <ul>
+    <li>Determining estimated effort using Halstead's metrics</li>
+  </ul>
+  
+  
+</div>  <!-- card body ended for exercise 3 problem statement -->
+</div> <!-- card ended for exercise 3 problem statement -->
+
+
+<!----------------------------------------Problem Statement Exercise 3 complete-------------------------------------->
+
+
+	<!-----------------------------Exercise 3 --------------------------->
+  <div class="card border border-2 border-success p-1" id="ex3" style="display:none;">
+    <div class="card-body">
+    <form id="exer3"  class=" bg-white " action="">
+      <div class="table-responsive">
+      <table id="ex3tbl" class="p-2 table table-bordered border-primary tabe-striped table-hover">
+       <tr  style=" background-color: #2226fa; color: aliceblue;"> <th >Parameters</th>
+        <th >Value</th>
+        </tr>
+        <tr>
+          <td>Total # of operators</td>
+          <td><input class="form-control border-primary" type="number"  id="inp31" ></td>
+        </tr>
+        <tr class="table-primary border-primary">
+          <td>Total # of operands</td>
+          <td><input class="form-control border-primary" type="number"  id="inp32" ></td>
+        </tr>
+        <tr>
+          <td>Total # of unique operators</td>
+          <td><input class="form-control border-primary" type="number"  id="inp33" ></td>
+        </tr>
+        <tr class="table-primary border-primary">
+          <td>Total # of unique operands</td>
+          <td><input class="form-control border-primary" type="number"  id="inp34" ></td>
+        </tr>
+        <tr>
+          <td>Program length</td>
+          <td ><input class="form-control border-primary" type="number"  id="opt31" readonly ></td>
+        </tr>
+        <tr class="table-primary border-primary">
+          <td>Program vocabulary</td>
+          <td ><input class="form-control border-primary" type="number"  id="opt32" readonly ></td>
+        </tr>
+        <tr>
+          <td>Volume</td>
+          <td ><input class="form-control border-primary" type="number"  id="opt33" readonly ></td>
+        </tr>
+        <tr class="table-primary border-primary">
+          <td>Difficulty</td>
+          <td ><input class="form-control border-primary" type="number"  id="opt34" readonly ></td>
+        </tr>
+        <tr>
+          <td>Effort</td>
+          <td ><input class="form-control border-primary" type="number"  id="opt35" readonly ></td>
+        </tr>
+        <tr class="table-primary border-primary">
+          <td>Time to implement (in seconds)</td>
+          <td ><input class="form-control border-primary" type="number"  id="opt36" readonly ></td>
+        </tr>
+        <tr>
+          <td colspan="2"><div class="text-center"><button type="button" class="btn btn-primary" id="cal3" onclick="calculate3()">Calculate</button></div></td>
+        </tr>
+        </table>
+        </div> <!-- table responsive div exercise 3 ended-->
+        </form> <!-- form for exercise 3 ended-->
+        </div><!-- card body ended for exercise 3 -->
+        </div> <!-- card ended for exercise 3 -->
+
+	<!-----------------------------Exercise 3 complete --------------------------->
+
+  <!---------------------------------Result Display----------------------------------->
+
+
+				<div class="card border border-2 border-warning p-1" id="dispres" style="display:none;">
+  <div class="card-body">
+	<label for="result" class="form-label fs-4" style="color: brown; font-weight: bold;">Results and Discussions</label>
+   <div style="font-size: medium;" id="show_result1" style="display: none;">
+ 
+  
+<img src="./images/sol1.jpg" class="img-fluid" alt="solution 1"> <br>
+<p class="fs-6" >Applications experience (high): 0.91 <br>
+Programming language experience (high): 0.95 <br>
+Application of software engineering methods (high): 0.91 <br>
+Use of software tools (high): 0.91 <br>
+
+Other cost drivers have nominal values (= 1). So, EAF = 0.91 * 0.95 * 0.91 * 0.91 = 0.70
+</p>
+</div>  <!--div for result display exercise 1 ended-->
+<p class="fs-5" style=" font-size: medium;" id="show_result"></p> 
+<div style=" font-size: medium;" id="show_result2" style="display: none;">
+   <div class="table-responsive">
+    <table class="p-2 table table-bordered border-primary">
+      <thead>
+        <tr>
+          <td class="fs-5 fw-bold">The Operators are</td>
+          <td class="fs-5 fw-bold">The operands are</td>
+        </tr>
+      </thead>
+      <tbody class="fs-5">
+        <tr>
+          <td>
+            <ul>
+              <li>int</li>
+              <li>main</li>
+              <li>char</li>
+              <li>*</li>
+              <li>()</li>
+              <li>{}</li>
+              <li>=</li>
+              <li>;</li>
+              <li>+</li>
+              <li>printf</li>
+              <li>,</li>
+              <li>return</li>
+            
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>argc</li>
+              <li>argv</li>
+              <li>x</li>
+              <li>10</li>
+              <li>y</li>
+              <li>20</li>
+              <li>sum</li>
+              <li>"Sum of %d amd %d is: %d \n"</li>
+              <li>0</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+   </div> <!-- table responsive div exercise 2 ended-->
+  
+  
+</div> <!-- div for result display exercise 3-->
+ <div style=" font-size: medium;" id="show_result3">
+  <img src="./images/sol3.png" class="img-fluid" alt="solution 3"> <br>
+  <div class="table-responsive">
+    <table class="p-2 table table-bordered border-primary">
+      <thead>
+        <tr>
+          <td class="fs-5 fw-bold">The Operators are</td>
+          <td class="fs-5 fw-bold">The operands are</td>
+        </tr>
+      </thead>
+      <tbody class="fs-5">
+        <tr>
+          <td>
+            <ul>
+              <li>int</li>
+              <li>main</li>
+              <li>()</li>
+              <li>int</li>
+              <li>,</li>
+              <li>char</li>
+              <li>*</li>
+              <li>{}</li>
+              <li>int</li>
+              <li>=</li>
+              <li>;</li>
+              <li>printf</li>
+              <li>()</li>
+              <li>,</li>
+              <li>,</li>
+              <li>()</li>
+              <li>area</li>
+              <li>;</li>
+              <li>return</li>
+              <li>;</li>
+              <li>float</li>
+              <li>area</li>
+              <li>()</li>
+              <li>float</li>
+              <li>{}</li>
+              <li>return</li>
+              <li>*</li>
+              <li>*</li>
+              <li>/</li>
+              <li>;</li>
+
+       
+            
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>argc</li>
+              <li>argv</li>
+              <li>radius</li>
+              <li>12.34</li>
+              <li>"Area of the circle with radius %f is: %f\n"</li>
+              <li>radius</li>
+              <li>radius</li>
+              <li>0</li>
+              <li>r</li>
+              <li>22</li>
+              <li>r</li>
+              <li>r</li>
+              <li>7</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+   </div> <!-- table responsive div exercise 3 ended -->
+</div>  <!-- div for result display exercise 3-->
+
+ <button type="button" class="btn btn-info border-primary" id="viewsol" onclick="solview()" disabled>View Solution</button>
+
+</div> <!-- Card body ended for result display-->
+</div> <!-- Card  ended for result display-->
+
+			
+			
+</div> <!--- d-Flex ended-->
+  </div> <!-- container-fluid ended-->
+
+  <!-- <div class="container-fluid p-1 ">
+    <hr>
+  <footer class="text-white text-center" >
+    
+      <p class="text-primary fs-5 text-center" >  Copyright  © 2023  IIT Kharagpur, <a class="text-primary fs-5 text-center " href="http://vlabs.iitkgp.ac.in/">Virtual Lab</a></p>
+   
+  </footer>
+  <hr>
+  </div> -->
+	
+  <!--footer class="text-white text-center ">
+    <div class="text-center text-white fs-5 bg-primary"  >
+      Copyright © 2023  IIT Kharagpur,
+      <a class="text-white fs-5" href="http://vlabs.iitkgp.ac.in/">Virtual Lab</a>
+    </div>
+    </footer-->
+    
+	
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
