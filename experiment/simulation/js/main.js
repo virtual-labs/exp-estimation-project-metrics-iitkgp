@@ -27,6 +27,7 @@ Author: Prakriti Dhang */
        document.getElementById("opttdev").value=tdevs; //display tdev
        document.getElementById("optdev").value=ndevolperss; //no of developers
     }*/
+
     var sliderval = document.getElementById("slide");
    var output= document.getElementById("sliderAmount")
    output.innerHTML = sliderval.value;
@@ -165,6 +166,7 @@ if(ptype.options[ptype.selectedIndex].value==0){
     var x = document.getElementById("slide");
     x.setAttribute("min", 2);
     x.setAttribute("max", 50);
+    x.setAttribute("step", 2);
     var svalue = document.getElementById("slide").value;
    document.getElementById("sliderAmount").innerHTML = svalue;
    typa = document.getElementById("ta").innerText; //a value type
