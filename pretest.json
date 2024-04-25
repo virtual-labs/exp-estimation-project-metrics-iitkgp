@@ -1,0 +1,41 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "According to the COCOMO model, a project can be categorized into",
+      "answers": {
+        "a": "3 types",
+        "b": "5 types",
+        "c": "5 types",
+        "d": "No such categorization "
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In Intermediate COCOMO model, Effort Adjustment Factor (EAF) is derived from the effort multipliers by",
+      "answers": {
+        "a": "Adding them",
+        "b": "Multiplying them ",
+        "c": "Taking their weighted average",
+        "d": "Considering their maximum "
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Project metrics are estimated during which phase?",
+      "answers": {
+        "a": "Feasibility study",
+        "b": "Planning ",
+        "c": "Design",
+        "d": "Development"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}

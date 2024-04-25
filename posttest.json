@@ -1,0 +1,37 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "According to Halsetad's metrics, program length is given by the",
+      "answers": {
+        "a": "Sum of total number of operators and operands ",
+        "b": "Sum of number of unique operators and operands ",
+        "c": "Total number of operators",
+        "d": "Total number of operands"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Complete COCOMO considers a software as a",
+      "answers": {
+        "a": "Homogeneous system",
+        "b": "Heterogeneous system"
+       
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Consider you are developing a web application, which would make use of a lot of web services provided by Facebook, Google, Flickr. Would it be wise to make estimates for this project using COCOMO?",
+      "answers": {
+        "a": "Yes, of course",
+        "b": "Not at all"
+       
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
