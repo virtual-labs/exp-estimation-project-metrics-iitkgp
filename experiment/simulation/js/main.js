@@ -172,7 +172,7 @@ if(ptype.options[ptype.selectedIndex].value==0){
    typa = document.getElementById("ta").innerText; //a value type
    typb = document.getElementById("tb").innerText; //b value type
    typc = document.getElementById("tc").innerText; //c value type
-   var effortpsb= ((parseFloat(x))**(parseFloat(typb))).toFixed(2);  // projectsize^b
+   var effortpsb= ((parseFloat(svalue))**(parseFloat(typb))).toFixed(2);  // projectsize^b
    var efforts = (parseFloat(typa) * parseFloat(effortpsb)).toFixed(2); // typa * effortb
   
    var effortsc=((parseFloat(efforts))**(parseFloat(typc))).toFixed(2); // effort^c
@@ -203,7 +203,7 @@ if(ptype.options[ptype.selectedIndex].value==1){
     typa = document.getElementById("ta").innerText; //a value type
     typb = document.getElementById("tb").innerText; //b value type
     typc = document.getElementById("tc").innerText; //c value type
-    var effortpsb= ((parseFloat(x))**(parseFloat(typb))).toFixed(2);  // projectsize^b
+    var effortpsb= ((parseFloat(svalue))**(parseFloat(typb))).toFixed(2);  // projectsize^b
     var efforts = (parseFloat(typa) * parseFloat(effortpsb)).toFixed(2); // typa * effortb
    
     var effortsc=((parseFloat(efforts))**(parseFloat(typc))).toFixed(2); // effort^c
@@ -232,7 +232,7 @@ if(ptype.options[ptype.selectedIndex].value==2){
     typa = document.getElementById("ta").innerText; //a value type
     typb = document.getElementById("tb").innerText; //b value type
     typc = document.getElementById("tc").innerText; //c value type
-    var effortpsb= ((parseFloat(x))**(parseFloat(typb))).toFixed(2);  // projectsize^b
+    var effortpsb= ((parseFloat(svalue))**(parseFloat(typb))).toFixed(2);  // projectsize^b
     var efforts = (parseFloat(typa) * parseFloat(effortpsb)).toFixed(2); // typa * effortb
    
     var effortsc=((parseFloat(efforts))**(parseFloat(typc))).toFixed(2); // effort^c
