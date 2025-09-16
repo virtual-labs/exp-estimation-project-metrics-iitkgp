@@ -1,0 +1,133 @@
+<!--Redeveloped
+Lab: Software Engineering
+Exp:Estimation of Project Metrics
+File Name: index.html
+Author: Prakriti Dhang -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Add CSS at the head of HTML file -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+   <!--  <header id="header">
+        <div class="container p-3">
+          <div class="card">
+          <div class="row">
+            <div class="col-md-2">
+            <img src="images/vlabs-logo.png" class=" rounded img-fluid" alt="vlabs-logo" >
+          </div>
+          <div class="col-md-8 p-4">
+            <p class="h2 fw-bold text-primary text-center"> Virtual Lab IIT Kharagpur</p>
+          </div>
+          <div class="col-md-2">
+            <img src="images/iitkgp-logo.png" class=" rounded img-fluid" alt="iitkgplogo" >
+          </div>
+          </div>
+        </div>
+        </div>
+      </header>
+
+      <div class="container p-2">
+        <hr>
+        <p class="h3 fw-bold fst-italic text-center" style="color: #000283;"> Estimation of Project Metrics</p>
+        <hr>
+    </div> -->
+
+    <div class="container mt-2 p-3">
+		
+        <div class="d-flex flex-column justify-content-center mb-3 ">  
+            <div class="row">
+                <div class="col-md-6">
+                   <p class="fs-5 fw-bold" style="color: brown; text-align: justify;">Using Basic COCOMO model to estimate project parameters</p>
+                   <p class="fs-6" style="text-align: justify;">Use the simulator on the right hand side to understand how project type 
+                    and size affects the different parameters estimated.
+              <i>Quick glance at the formulae:
+<ul>
+    <li><b>Effort:</b> a * (Size)<sup>b</sup> person-month</li>
+    <li><b>Tdev :</b> 2.5 * (Effort)<sup>c</sup> month</i></li>
+    <li><b>No of Developers:</b> Effort/Tdev</li>
+</ul>
+Drag the slider to change the project size. Note: select the nearest discrete value corresponding to the actual size.
+
+
+                   </p>
+               
+                </div>
+               
+                <div class="col-md-6">
+                    <div class="table-responsive">
+                        <table id="ex1tbl" class="p-2 table table-bordered border-primary  table-hover">
+                         <thead> 
+                        <th >Project Type</th>
+                          <th >a</th>
+                          <th>b</th>
+                          <th>c</th>
+                         </thead>
+                          <tr>
+                            <td><select id="selecttype" onchange="choicetype()" class="form-select float-center border-primary" aria-label="Default select example">
+                              <option value="0">Organic</option>
+                              <option value="1">Semi-Detached</option>
+                              <option value="2">Embedded</option>
+                            </select></td>
+                            <td id="ta">2.4</td>
+                            <td id="tb">1.05</td>
+                            <td id="tc">0.38</td>
+                          </tr>
+                          <tr class="border-primary" style="background-color: rgb(211, 246, 255);">
+                            <td>Project size (in KLOC)</td>
+                            <td colspan="3"> 
+                                <input id="slide" type="range" min="2" max="50" step="2" value="2" class="form-range border-primary" > <!-- onchange="updateSlider()"-->
+                                <div style="text-align: center; " id="sliderAmount">2</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td >Effort (in PM)</td>
+                            <td colspan="3"  > <input class="form-control border-primary" style="text-align: center;" type="number" id="opteff" readonly></td>
+                          </tr>
+                          <tr class="table-info border-primary">
+                            <td>Tdev (in month)</td>
+                            <td colspan="3" ><input class="form-control border-primary" style="text-align: center;" type="number" id="opttdev" readonly> </td>
+                          </tr>
+                          
+                          
+                          <tr >
+                            <td># of developers</td>
+                            <td colspan="3" > <input class="form-control border-primary" style="text-align: center;" type="number" id="optdev" readonly></td>
+                          </tr>
+                         
+                        </table>
+                      </div> <!-- table responsive div ended for exercise 1-->
+                </div>
+            </div>
+            <hr>
+            <p style="text-align: justify;">As evident from the simulation parameters, size of a semi-detached project is larger than that of an organic project, and size of an embedded project is larger than that of a semi-detached, and thereby affecting factors like effort and development time.</p>
+            <!--a class="btn btn-success fs-4" target="_self" href="./projectmetrics_index.html" role="button">Click Here to Go to Exercise Page</a>
+            -->
+        </div>
+            </div>
+
+
+           <!--  <div class="container p-1 ">
+              <hr>
+            <footer class="text-white text-center" >
+              
+                <p class="text-primary fs-5 text-center" >  Copyright  © 2023  IIT Kharagpur, <a class="text-primary fs-5 text-center " href="http://vlabs.iitkgp.ac.in/">Virtual Lab</a></p>
+             
+            </footer>
+            <hr>
+            </div> -->
+
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/simulation.js"></script>
+<script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+</html>
